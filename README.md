@@ -3,14 +3,13 @@
 
 Welcome to the Question Answering App with BERT and Flask project! This project demonstrates a user-friendly web application that uses a pre-trained BERT-based model to answer questions based on a given passage. The app is built using Python, the transformers library for BERT, Flask for the web framework, and HTML/CSS for the interactive user interface.
 
-![](screenshots/BERT-QnA.gif)
-
 
 ## Overview
 
 Have you ever wanted to quickly find answers to specific questions within a large body of text? This app is designed to address that need. Simply input a passage of text and a question, and the app will provide you with a concise answer, highlighting the relevant sections of the passage.
 
-[GitHub](https://github.com/JacobJ215/BERT-QUESTION-ANSWERING-APP)
+![image](https://github.com/Ananya01Agrawal/BERT-Question-Answering/assets/99130567/59bd4c75-d852-4cbc-b7df-def57052fe43)
+
 
 ## BERT: Background and Model
 
