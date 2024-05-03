@@ -19,6 +19,12 @@ The BERT model is pre-trained on a massive amount of text data, learning to pred
 
 For this project, we're using a specific variant of the BERT model known as "bert-large-uncased-whole-word-masking-finetuned-squad." This variant has been fine-tuned on the Stanford Question Answering Dataset (SQuAD), making it well-suited for question answering tasks. It's capable of processing both the passage and the question to provide accurate answers.
 
+
+### What is SQuAD?
+
+Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.
+
+
 ## Features
 
 - **User-Friendly Interface:** The app provides a simple and intuitive interface for users to input a passage and a question.
