@@ -24,6 +24,32 @@ For this project, we're using a specific variant of the BERT model known as "ber
 
 Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage, or the question might be unanswerable.
 
+![image](https://github.com/Ananya01Agrawal/BERT-Question-Answering-Project/assets/99130567/79cba026-4d26-41cf-a998-5864daa1f517)
+
+For the Question Answering System, BERT takes two parameters, the input question, and passage as a single packed sequence. The input embeddings are the sum of the token embeddings and the segment embeddings.
+
+Token embeddings: A [CLS] token is added to the input word tokens at the beginning of the question and a [SEP] token is inserted at the end of both the question and the paragraph.
+Segment embeddings: A marker indicating Sentence A or Sentence B is added to each token. This allows the model to distinguish between sentences. In the below example, all tokens marked as A belong to the question, and those marked as B belong to the paragraph.
+
+Segment embeddings: A marker indicating Sentence A or Sentence B is added to each token. This allows the model to distinguish between sentences. In the below example, all tokens marked as A belong to the question, and those marked as B belong to the paragraph.
+
+![image](https://github.com/Ananya01Agrawal/BERT-Question-Answering-Project/assets/99130567/df780a94-09f2-4993-8629-a1aaabf02737)
+
+BERT uses “Segment Embeddings” to differentiate the question from the reference text. These are simply two embeddings (for segments “A” and “B”) that BERT learned, and which it adds to the token embeddings before feeding them into the input layer.
+
+![image](https://github.com/Ananya01Agrawal/BERT-Question-Answering-Project/assets/99130567/1fe21c27-b3ae-4cde-8f11-eb2b893bb5ee)
+
+
+For every token in the text, we feed its final embedding into the start token classifier. The start token classifier only has a single set of weights which applies to every word.
+
+After taking the dot product between the output embeddings and the ‘start’ weights, we apply the softmax activation to produce a probability distribution over all of the words. Whichever word has the highest probability of being the start token is the one that we pick.
+
+
+
+
+
+
+
 
 ## Features
 
